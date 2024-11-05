@@ -1,6 +1,7 @@
 import { Separator } from './ui/separator'
 import { ChatMessageWidget } from './chat-message'
 import { Message } from '../lib/chat-types'
+import { h } from 'preact';
 
 
 
@@ -11,7 +12,9 @@ export interface ChatListWidgetProps {
 
 export function ChatListWidget({ messages, aiIcon }: ChatListWidgetProps) {
   if (!messages.length) {
+    console.error('Invalid message content:', messages)
     return null; // Return null if there are no messages
+
   }
 
   return (

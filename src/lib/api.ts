@@ -5,16 +5,17 @@
  * We also create a few inference helpers for input and output types.
  */
 
+//CHANGED
 // Watch out for how the env is imported.
-import {env} from '../env.js'
+import {env} from '../env'
 import Client, { Environment, Local } from './client'
 
 export const getBaseUrl = () => {
-  if (env.NEXT_PUBLIC_API_URL) {
-    return env.NEXT_PUBLIC_API_URL  
+  if (env.VITE_API_URL) {
+    return env.VITE_API_URL  
   }
 
-  switch (env.NEXT_PUBLIC_API_ENV) {
+  switch (env.VITE_API_ENV) {
     case 'prod':
       return Environment('prod')
     case 'dev':

@@ -1,11 +1,17 @@
-import { env } from "../env.mjs";
+import { env } from "../env";
 import { getBaseUrl } from "./api";
 import Client from "./client";
 import { getAppByDomain } from "../lib/actions";
 import { nanoid } from "nanoid";
 
-  export async function getAppDetails() {
-    const domain = env.NEXT_PUBLIC_ROOT_DOMAIN;
+export async function getAppDetails() {
+    const domain = env.VITE_ROOT_DOMAIN;
+    console.log(domain)
+
+    if (!domain) {
+        throw new Error('Domain is not defined');
+    }
+
     const app = await getAppByDomain(domain);
 
     if (!app) {
@@ -19,4 +25,4 @@ import { nanoid } from "nanoid";
         name: app.name,
         id: nanoid()
     }
-  }
+}

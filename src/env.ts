@@ -53,7 +53,7 @@ const merged = server.merge(client)
 /** @typedef {z.infer<typeof merged>} MergedOutput */
 /** @typedef {z.SafeParseReturnType<MergedInput, MergedOutput>} MergedSafeParseReturn */
 
-let env = /** @type {MergedOutput} */ (process.env)
+let env = /** @type {MergedOutput} */ (import.meta.env)
 
 if (!!import.meta.env.SKIP_ENV_VALIDATION == false) {
   const isServer = typeof window === 'undefined'
@@ -73,21 +73,23 @@ if (!!import.meta.env.SKIP_ENV_VALIDATION == false) {
     throw new Error('Invalid environment variables')
   }
 
-  env = new Proxy(parsed.data, {
-    get(target, prop) {
-      if (typeof prop !== 'string') return undefined
 
-      // Throw a descriptive error if a server-side env var is accessed on the client
-      // Otherwise it would just be returning `undefined` and be annoying to debug
-      if (!isServer && !prop.startsWith('VITE_'))
-        throw new Error(
-          import.meta.env.NODE_ENV === 'production'
-            ? '❌ Attempted to access a server-side environment variable on the client'
-            : `❌ Attempted to access server-side environment variable '${prop}' on the client`
-        )
-      return target[/** @type {keyof typeof target} */ (prop as keyof typeof target)]
-    }
-  })
+
+  // env = new Proxy(parsed.data, {
+  //   get(target, prop) {
+  //     if (typeof prop !== 'string') return undefined
+
+  //     // Throw a descriptive error if a server-side env var is accessed on the client
+  //     // Otherwise it would just be returning `undefined` and be annoying to debug
+  //     if (!isServer && !prop.startsWith('VITE_'))
+  //       throw new Error(
+  //         import.meta.env.NODE_ENV === 'production'
+  //           ? '❌ Attempted to access a server-side environment variable on the client'
+  //           : `❌ Attempted to access server-side environment variable '${prop}' on the client`
+  //       )
+  //     return target[/** @type {keyof typeof target} */ (prop as keyof typeof target)]
+  //   }
+  // })
 }
 
 export { env }

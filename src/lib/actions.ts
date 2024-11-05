@@ -2,12 +2,12 @@
 
 import Client from '../lib/client'
 import { getBaseUrl } from '../lib/api'
-import { env } from '../env.mjs'
+import { env } from '../env'
 
 
 
 const internalClient = new Client(getBaseUrl(), {
-    auth: env.WORSHIP_SECRET_KEY
+    auth: env.VITE_WORSHIP_SECRET_KEY
   })
 
 export async function getAppByDomain(domain: string) {

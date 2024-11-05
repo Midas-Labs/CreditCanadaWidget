@@ -1,4 +1,4 @@
-import React from 'preact';
+import React, { h } from 'preact';
 
 const CreditCompanionDescription = () => {
   return (

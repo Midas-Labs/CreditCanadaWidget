@@ -82,8 +82,8 @@ const getStreamedResponse = async (
   // Do an optimistic update to the chat state to show the updated messages
   // immediately.
   const previousMessages = messagesRef.current
-  const sendFullChatRequest = chatRequest
-  module.exports = sendFullChatRequest
+  // const sendFullChatRequest = chatRequest
+  // module.exports = sendFullChatRequest
 
   mutate(chatRequest.messages, false)
 
