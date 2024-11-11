@@ -1,4 +1,5 @@
 {
+  "homepage": "http://midas-labs.github.io/CreditCanadaWidget",
   "name": "@midas-labs/creditcanadawidget",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "dependencies": {
     "@radix-ui/react-separator": "^1.1.0",
@@ -34,6 +38,7 @@
     "@types/node": "^22.9.0",
     "@types/react-syntax-highlighter": "^15.5.13",
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.48",
     "tailwindcss": "^3.4.14",
     "typescript": "~5.6.3",
