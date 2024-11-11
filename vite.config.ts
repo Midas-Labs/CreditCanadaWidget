@@ -10,6 +10,7 @@ export default defineConfig({
       fileName: 'chatbot', // Output filename
       formats: ['es', 'umd'], // ES and UMD format for compatibility
     },
+    outDir: 'docs', 
     rollupOptions: {
       output: {
         globals: {
