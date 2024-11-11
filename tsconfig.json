@@ -1,18 +1,10 @@
-// {
-//   "files": [],
-//   "references": [
-//     { "path": "./tsconfig.app.json" },
-//     { "path": "./tsconfig.node.json" }
-//   ]
-// }
 {
   "compilerOptions": {
     "target": "ESNext",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "jsx": "react",
-    "jsxFactory": "h",
-    "jsxFragmentFactory": "Fragment",
-    //  "jsxImportSource": "preact",
+       "jsx": "react-jsx", // Use 'react-jsx' for Preact compatibility
+    "jsxImportSource": "preact",
+    "types": ["preact", "preact/compat"],
     "module": "ESNext",
     "moduleResolution": "Node",
     "strict": true,
@@ -22,7 +14,17 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
-    "noEmit": true
+    
+    "noEmit": true,
+    "baseUrl": "./",
+    "paths": {
+      "react": ["./node_modules/@types/react"],
+      "react-dom": ["./node_modules/preact/compat/"]
+    },
+    
+
   },
+
+
   "include": ["src"]
 }

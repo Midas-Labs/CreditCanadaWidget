@@ -25,7 +25,7 @@ export default defineConfig({
       'react-dom/test-utils': 'preact/test-utils',
       'react/jsx-runtime': 'preact/jsx-runtime',
     },
-  },
+  }
 });
 
 
