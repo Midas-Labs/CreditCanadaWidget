@@ -13,7 +13,7 @@ export default defineConfig({
       formats: ['es', 'umd'],
     },
     rollupOptions: {
-      external: ['preact'], //  new
+      // external: ['preact'], //  new
       output: {
         globals: {
           preact: 'Preact',
