@@ -1,7 +1,7 @@
+import zw, { options as Xe, Component as en, createElement as Bt, Fragment as En, toChildArray as Xt, createContext as tn, createRef as $E, render as ur, hydrate as $w, cloneElement as Hw, h as qw } from "preact";
 var Pw = Object.defineProperty;
 var Uw = (e, t, n) => t in e ? Pw(e, t, { enumerable: !0, configurable: !0, writable: !0, value: n }) : e[t] = n;
 var je = (e, t, n) => Uw(e, typeof t != "symbol" ? t + "" : t, n);
-import zw, { options as Xe, Component as en, createElement as Bt, Fragment as En, toChildArray as Xt, createContext as tn, createRef as $E, render as ur, hydrate as $w, cloneElement as Hw, h as qw } from "preact";
 var Gw = 0;
 function B(e, t, n, r, a, o) {
   t || (t = {});
