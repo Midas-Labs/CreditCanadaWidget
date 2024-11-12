@@ -1,6 +1,5 @@
 {
-  "homepage": "http://midas-labs.github.io/CreditCanadaWidget",
-  "name": "@midas-labs/creditcanadawidget",
+
   "private": true,
   "version": "0.0.0",
   "type": "module",
