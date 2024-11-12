@@ -3,8 +3,8 @@ import preact from '@preact/preset-vite';
 
 export default defineConfig({
   plugins: [preact()],
-  // base: "https://midas-labs.github.io/CreditCanadaWidget/",
-  build: {
+  base: 'https://midas-labs.github.io/CreditCanadaWidget/', // new 
+    build: {
     lib: {
       entry: './src/main.tsx', // Path to your main file
       name: 'ChatBot', // Global name for UMD build
@@ -12,6 +12,7 @@ export default defineConfig({
       formats: ['es', 'umd'], // ES and UMD format for compatibility
     },
     rollupOptions: {
+      external: ['preact'], //  new
       output: {
         globals: {
           preact: 'Preact',
