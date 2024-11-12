@@ -6907,7 +6907,7 @@ var gt = /* @__PURE__ */ Object.freeze({
   quotelessJson: sA,
   ZodError: ut
 });
-const cT = { BASE_URL: "/", DEV: !1, MODE: "production", PROD: !0, SSR: !1, VITE_API_ENV: "dev", VITE_API_URL: "https://dev-worship-yoz2.encr.app", VITE_BASELIME_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_BASELIME_RUM_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_FEEDBACK_ENV: "local", VITE_GOOGLE_ANALYTICS: "G-JJGB830P9K", VITE_ROOT_DOMAIN: "credit-canada-dev.localhost", VITE_SEGMENT_WRITE_KEY: "0GEdvB63FsuOyPZNRuUnlnvXjmHSBGBE", VITE_SHAKEBUGS_URL: "localhost:3000", VITE_WORSHIP_SECRET_KEY: "worship_gcsBHfiLtQwk5FIHOA3H9pgdNNUJoank5NIILvNgZzFHi2LrCvej6FcVEppzRr8l66z101FqmtriecAV5u6g" }, uT = gt.object({
+const cT = { BASE_URL: "/CreditCanadaWidget", DEV: !1, MODE: "production", PROD: !0, SSR: !1, VITE_API_ENV: "dev", VITE_API_URL: "https://dev-worship-yoz2.encr.app", VITE_BASELIME_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_BASELIME_RUM_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_FEEDBACK_ENV: "local", VITE_GOOGLE_ANALYTICS: "G-JJGB830P9K", VITE_ROOT_DOMAIN: "credit-canada-dev.localhost", VITE_SEGMENT_WRITE_KEY: "0GEdvB63FsuOyPZNRuUnlnvXjmHSBGBE", VITE_SHAKEBUGS_URL: "localhost:3000", VITE_WORSHIP_SECRET_KEY: "worship_gcsBHfiLtQwk5FIHOA3H9pgdNNUJoank5NIILvNgZzFHi2LrCvej6FcVEppzRr8l66z101FqmtriecAV5u6g" }, uT = gt.object({
   NODE_ENV: gt.enum(["development", "test", "production"])
   //   WORSHIP_SECRET_KEY: z.string(),
 }), mS = gt.object({
