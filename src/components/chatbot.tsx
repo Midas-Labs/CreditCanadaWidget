@@ -86,7 +86,7 @@ export default function ChatBot() {
           <div className="flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white shadow-lg" style={{ height: '450px', width: '750px' }}>
             {/* Header */}
             <div className="flex items-center h-16 border-b border-gray-300 bg-gray-100 p-4">
-              <img src="/logo-small.png" alt="Credit Canada" className="mr-2 h-8 w-8" />
+              <img src="/public/logo-small.png" alt="Credit Canada" className="mr-2 h-8 w-8" />
               <h3 className="font-bold text-gray-900 pl-6" style={{ fontSize: '23px', marginRight: 'auto' }}> Nova Ai </h3>
               <button
                 onClick={() => setIsOpen((prev) => !prev)}                

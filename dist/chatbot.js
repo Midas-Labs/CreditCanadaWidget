@@ -1,7 +1,7 @@
-import zw, { options as Xe, Component as en, createElement as Bt, Fragment as En, toChildArray as Xt, createContext as tn, createRef as $E, render as ur, hydrate as $w, cloneElement as Hw, h as qw } from "preact";
 var Pw = Object.defineProperty;
 var Uw = (e, t, n) => t in e ? Pw(e, t, { enumerable: !0, configurable: !0, writable: !0, value: n }) : e[t] = n;
 var je = (e, t, n) => Uw(e, typeof t != "symbol" ? t + "" : t, n);
+import zw, { options as Xe, Component as en, createElement as Bt, Fragment as En, toChildArray as Xt, createContext as tn, createRef as $E, render as ur, hydrate as $w, cloneElement as Hw, h as qw } from "preact";
 var Gw = 0;
 function B(e, t, n, r, a, o) {
   t || (t = {});
@@ -6611,7 +6611,7 @@ var pt = /* @__PURE__ */ Object.freeze({
   quotelessJson: R_,
   ZodError: ct
 });
-const xA = { BASE_URL: "https://midas-labs.github.io/CreditCanadaWidget/", DEV: !1, MODE: "production", PROD: !0, SSR: !1, VITE_API_ENV: "dev", VITE_API_URL: "https://dev-worship-yoz2.encr.app", VITE_BASELIME_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_BASELIME_RUM_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_FEEDBACK_ENV: "local", VITE_GOOGLE_ANALYTICS: "G-JJGB830P9K", VITE_ROOT_DOMAIN: "credit-canada-dev.localhost", VITE_SEGMENT_WRITE_KEY: "0GEdvB63FsuOyPZNRuUnlnvXjmHSBGBE", VITE_SHAKEBUGS_URL: "localhost:3000", VITE_WORSHIP_SECRET_KEY: "worship_gcsBHfiLtQwk5FIHOA3H9pgdNNUJoank5NIILvNgZzFHi2LrCvej6FcVEppzRr8l66z101FqmtriecAV5u6g" }, IA = pt.object({
+const xA = { BASE_URL: "/", DEV: !1, MODE: "production", PROD: !0, SSR: !1, VITE_API_ENV: "dev", VITE_API_URL: "https://dev-worship-yoz2.encr.app", VITE_BASELIME_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_BASELIME_RUM_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_FEEDBACK_ENV: "local", VITE_GOOGLE_ANALYTICS: "G-JJGB830P9K", VITE_ROOT_DOMAIN: "credit-canada-dev.localhost", VITE_SEGMENT_WRITE_KEY: "0GEdvB63FsuOyPZNRuUnlnvXjmHSBGBE", VITE_SHAKEBUGS_URL: "localhost:3000", VITE_WORSHIP_SECRET_KEY: "worship_gcsBHfiLtQwk5FIHOA3H9pgdNNUJoank5NIILvNgZzFHi2LrCvej6FcVEppzRr8l66z101FqmtriecAV5u6g" }, IA = pt.object({
   NODE_ENV: pt.enum(["development", "test", "production"])
   //   WORSHIP_SECRET_KEY: z.string(),
 }), Bv = pt.object({
@@ -45821,7 +45821,7 @@ function yP() {
     m.current && e && m.current.focus();
   }, [e]), /* @__PURE__ */ B(gP, { children: /* @__PURE__ */ B("div", { className: `fixed z-50 ${e ? "left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" : "bottom-5 left-5"}`, children: e ? /* @__PURE__ */ B("div", { className: "flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white shadow-lg", style: { height: "450px", width: "750px" }, children: [
     /* @__PURE__ */ B("div", { className: "flex items-center h-16 border-b border-gray-300 bg-gray-100 p-4", children: [
-      /* @__PURE__ */ B("img", { src: "/logo-small.png", alt: "Credit Canada", className: "mr-2 h-8 w-8" }),
+      /* @__PURE__ */ B("img", { src: "/public/logo-small.png", alt: "Credit Canada", className: "mr-2 h-8 w-8" }),
       /* @__PURE__ */ B("h3", { className: "font-bold text-gray-900 pl-6", style: { fontSize: "23px", marginRight: "auto" }, children: " Nova Ai " }),
       /* @__PURE__ */ B(
         "button",

@@ -3,7 +3,7 @@ import preact from '@preact/preset-vite';
 
 export default defineConfig({
   plugins: [preact()],
-  base: 'https://midas-labs.github.io/CreditCanadaWidget/', // new
+  // base: 'https://midas-labs.github.io/CreditCanadaWidget/', // new
     build: {
     lib: {
       entry: './src/main.tsx', 
