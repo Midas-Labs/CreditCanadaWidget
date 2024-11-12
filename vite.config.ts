@@ -4,6 +4,7 @@ import preact from '@preact/preset-vite';
 export default defineConfig({
   plugins: [preact()],
   // base: 'https://midas-labs.github.io/CreditCanadaWidget/', // new
+  base: '/CreditCanadaWidget', // Ensure this is uncommented and correct for GitHub Pages
     build: {
     lib: {
       entry: './src/main.tsx', 
