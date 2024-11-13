@@ -1,30 +1,20 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-       "jsx": "react-jsx", // Use 'react-jsx' for Preact compatibility
-    "jsxImportSource": "preact",
-    "types": ["preact", "preact/compat"],
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true,
-    
-    "noEmit": true,
-    "baseUrl": "./",
-    "paths": {
-      "react": ["./node_modules/@types/react"],
-      "react-dom": ["./node_modules/preact/compat/"]
-    },
-    
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"noEmit": true,
+		"allowJs": true,
+		"checkJs": true,
 
-  },
-
-
-  "include": ["src"]
+		/* Preact Config */
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact",
+		"skipLibCheck": true,
+		"paths": {
+			"react": ["./node_modules/preact/compat/"],
+			"react-dom": ["./node_modules/preact/compat/"]
+		}
+	},
+	"include": ["node_modules/vite/client.d.ts", "**/*"]
 }
