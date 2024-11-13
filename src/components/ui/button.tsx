@@ -40,7 +40,7 @@ export interface ButtonProps
 
 const Slot = forwardRef<HTMLButtonElement, JSX.HTMLAttributes<HTMLButtonElement>>(
   (props, ref) => (
-    <RadixSlot ref={ref} {...props} />
+    <RadixSlot ref={ref} {...props} /> 
   )
 );
 
