@@ -22,7 +22,7 @@ function fr(e, t, n, r, a) {
 function qd() {
   return { current: null };
 }
-function ht(e) {
+function bt(e) {
   return e.children;
 }
 function ct(e, t) {
@@ -58,7 +58,7 @@ function bE(e, t, n, r, a, o, i, s, l, c, d) {
 }
 function vw(e, t, n) {
   var r, a, o, i, s, l = t.length, c = n.length, d = c, u = 0;
-  for (e.__k = [], r = 0; r < l; r++) (a = t[r]) != null && typeof a != "boolean" && typeof a != "function" ? (i = r + u, (a = e.__k[r] = typeof a == "string" || typeof a == "number" || typeof a == "bigint" || a.constructor == String ? fr(null, a, null, null, null) : Ra(a) ? fr(ht, { children: a }, null, null, null) : a.constructor === void 0 && a.__b > 0 ? fr(a.type, a.props, a.key, a.ref ? a.ref : null, a.__v) : a).__ = e, a.__b = e.__b + 1, o = null, (s = a.__i = Ew(a, n, i, d)) !== -1 && (d--, (o = n[s]) && (o.__u |= 131072)), o == null || o.__v === null ? (s == -1 && u--, typeof a.type != "function" && (a.__u |= 65536)) : s !== i && (s == i - 1 ? u-- : s == i + 1 ? u++ : (s > i ? u-- : u++, a.__u |= 65536))) : a = e.__k[r] = null;
+  for (e.__k = [], r = 0; r < l; r++) (a = t[r]) != null && typeof a != "boolean" && typeof a != "function" ? (i = r + u, (a = e.__k[r] = typeof a == "string" || typeof a == "number" || typeof a == "bigint" || a.constructor == String ? fr(null, a, null, null, null) : Ra(a) ? fr(bt, { children: a }, null, null, null) : a.constructor === void 0 && a.__b > 0 ? fr(a.type, a.props, a.key, a.ref ? a.ref : null, a.__v) : a).__ = e, a.__b = e.__b + 1, o = null, (s = a.__i = Ew(a, n, i, d)) !== -1 && (d--, (o = n[s]) && (o.__u |= 131072)), o == null || o.__v === null ? (s == -1 && u--, typeof a.type != "function" && (a.__u |= 65536)) : s !== i && (s == i - 1 ? u-- : s == i + 1 ? u++ : (s > i ? u-- : u++, a.__u |= 65536))) : a = e.__k[r] = null;
   if (d) for (r = 0; r < c; r++) (o = n[r]) != null && !(131072 & o.__u) && (o.__e == e.__d && (e.__d = qn(o)), vE(o, o));
 }
 function hE(e, t, n) {
@@ -148,7 +148,7 @@ function Gd(e, t, n, r, a, o, i, s, l, c) {
     } else do
       u.__d = !1, T && T(t), d = u.render(u.props, u.state, u.context), u.state = u.__s;
     while (u.__d && ++O < 25);
-    u.state = u.__s, u.getChildContext != null && (r = $t($t({}, r), u.getChildContext())), b && !p && u.getSnapshotBeforeUpdate != null && (y = u.getSnapshotBeforeUpdate(f, h)), bE(e, Ra(L = d != null && d.type === ht && d.key == null ? d.props.children : d) ? L : [L], t, n, r, a, o, i, s, l, c), u.base = t.__e, t.__u &= -161, u.__h.length && i.push(u), k && (u.__E = u.__ = null);
+    u.state = u.__s, u.getChildContext != null && (r = $t($t({}, r), u.getChildContext())), b && !p && u.getSnapshotBeforeUpdate != null && (y = u.getSnapshotBeforeUpdate(f, h)), bE(e, Ra(L = d != null && d.type === bt && d.key == null ? d.props.children : d) ? L : [L], t, n, r, a, o, i, s, l, c), u.base = t.__e, t.__u &= -161, u.__h.length && i.push(u), k && (u.__E = u.__ = null);
   } catch (B) {
     if (t.__v = null, l || o != null) {
       for (t.__u |= l ? 160 : 128; s && s.nodeType === 8 && s.nextSibling; ) s = s.nextSibling;
@@ -229,7 +229,7 @@ function _w(e, t, n) {
 }
 function _n(e, t, n) {
   var r, a, o, i;
-  he.__ && he.__(e, t), a = (r = typeof n == "function") ? null : n && n.__k || t.__k, o = [], i = [], Gd(t, e = (!r && n || t).__k = pt(ht, null, [e]), a || mr, mr, t.namespaceURI, !r && n ? [n] : a ? null : t.firstChild ? Pr.call(t.childNodes) : null, o, !r && n ? n : a ? a.__e : t.firstChild, r, i), yE(o, e, i);
+  he.__ && he.__(e, t), a = (r = typeof n == "function") ? null : n && n.__k || t.__k, o = [], i = [], Gd(t, e = (!r && n || t).__k = pt(bt, null, [e]), a || mr, mr, t.namespaceURI, !r && n ? [n] : a ? null : t.firstChild ? Pr.call(t.childNodes) : null, o, !r && n ? n : a ? a.__e : t.firstChild, r, i), yE(o, e, i);
 }
 function Wd(e, t) {
   _n(e, t, Wd);
@@ -276,13 +276,13 @@ Pr = fE.slice, he = { __e: function(e, t, n, r) {
   n = this.__s != null && this.__s !== this.state ? this.__s : this.__s = $t({}, this.state), typeof e == "function" && (e = e($t({}, n), this.props)), e && $t(n, e), e != null && this.__v && (t && this._sb.push(t), ld(this));
 }, ct.prototype.forceUpdate = function(e) {
   this.__v && (this.__e = !0, e && this.__h.push(e), ld(this));
-}, ct.prototype.render = ht, En = [], dE = typeof Promise == "function" ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, od = function(e, t) {
+}, ct.prototype.render = bt, En = [], dE = typeof Promise == "function" ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, od = function(e, t) {
   return e.__v.__b - t.__v.__b;
 }, ua.__r = 0, Hd = 0, id = Yp(!1), sd = Yp(!0), pE = 0;
 const ww = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   Component: ct,
-  Fragment: ht,
+  Fragment: bt,
   cloneElement: EE,
   createContext: Ht,
   createElement: pt,
@@ -595,8 +595,8 @@ he.unmount = function(e) {
     }
     this.__b = null;
   }
-  var a = t.__a && pt(ht, null, e.fallback);
-  return a && (a.__u &= -33), [pt(ht, null, t.__a ? null : e.children), a];
+  var a = t.__a && pt(bt, null, e.fallback);
+  return a && (a.__u &= -33), [pt(bt, null, t.__a ? null : e.children), a];
 };
 var sf = function(e, t, n) {
   if (++n[1] === n[0] && e.o.delete(t), e.props.revealOrder && (e.props.revealOrder[0] !== "t" || !e.o.size)) for (n = e.u; n; ) {
@@ -716,7 +716,7 @@ function Gt(e) {
   return !!e && e.$$typeof === CE;
 }
 function OE(e) {
-  return Gt(e) && e.type === ht;
+  return Gt(e) && e.type === bt;
 }
 function LE(e) {
   return !!e && !!e.displayName && (typeof e.displayName == "string" || e.displayName instanceof String) && e.displayName.startsWith("Memo(");
@@ -734,7 +734,7 @@ var BE = function(e, t) {
   return e(t);
 }, xa = function(e, t) {
   return e(t);
-}, PE = ht;
+}, PE = bt;
 function Xd(e) {
   e();
 }
@@ -764,12 +764,12 @@ function Ya(e) {
     return !0;
   }
 }
-var nt = { useState: Ue, useId: Yd, useReducer: Ur, useEffect: Ne, useLayoutEffect: Yt, useInsertionEffect: ep, useTransition: Jd, useDeferredValue: Qd, useSyncExternalStore: tp, startTransition: Xd, useRef: ge, useImperativeHandle: Vd, useMemo: Ye, useCallback: Re, useContext: pn, useDebugValue: zr, version: "18.3.1", Children: nn, render: xE, hydrate: IE, unmountComponentAtNode: ME, createPortal: RE, createElement: pt, createContext: Ht, createFactory: NE, cloneElement: $r, createRef: qd, Fragment: ht, isValidElement: Gt, isElement: UE, isFragment: OE, isMemo: LE, findDOMNode: FE, Component: ct, PureComponent: da, memo: Ca, forwardRef: ze, flushSync: xa, unstable_batchedUpdates: BE, StrictMode: PE, Suspense: gr, SuspenseList: Bn, lazy: TE, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: DE };
+var nt = { useState: Ue, useId: Yd, useReducer: Ur, useEffect: Ne, useLayoutEffect: Yt, useInsertionEffect: ep, useTransition: Jd, useDeferredValue: Qd, useSyncExternalStore: tp, startTransition: Xd, useRef: ge, useImperativeHandle: Vd, useMemo: Ye, useCallback: Re, useContext: pn, useDebugValue: zr, version: "18.3.1", Children: nn, render: xE, hydrate: IE, unmountComponentAtNode: ME, createPortal: RE, createElement: pt, createContext: Ht, createFactory: NE, cloneElement: $r, createRef: qd, Fragment: bt, isValidElement: Gt, isElement: UE, isFragment: OE, isMemo: LE, findDOMNode: FE, Component: ct, PureComponent: da, memo: Ca, forwardRef: ze, flushSync: xa, unstable_batchedUpdates: BE, StrictMode: PE, Suspense: gr, SuspenseList: Bn, lazy: TE, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: DE };
 const Hw = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   Children: nn,
   Component: ct,
-  Fragment: ht,
+  Fragment: bt,
   PureComponent: da,
   StrictMode: PE,
   Suspense: gr,
@@ -970,10 +970,10 @@ const en = () => {
 }, qe = (
   /*#__NOINLINE__*/
   en()
-), Xa = Object, ue = (e) => e === qe, mt = (e) => typeof e == "function", bt = (e, t) => ({
+), Xa = Object, ue = (e) => e === qe, gt = (e) => typeof e == "function", mt = (e, t) => ({
   ...e,
   ...t
-}), jw = (e) => mt(e.then), Zr = /* @__PURE__ */ new WeakMap();
+}), jw = (e) => gt(e.then), Zr = /* @__PURE__ */ new WeakMap();
 let Ww = 0;
 const br = (e) => {
   const t = typeof e, n = e && e.constructor, r = n == Date;
@@ -1004,7 +1004,7 @@ const br = (e) => {
     (r) => {
       if (!ue(t)) {
         const a = e.get(t);
-        t in Kr || (Kr[t] = a), n[5](t, bt(a, r), a || Qa);
+        t in Kr || (Kr[t] = a), n[5](t, mt(a, r), a || Qa);
       }
     },
     // Subscriber
@@ -1044,7 +1044,7 @@ const Yw = () => fd, [gd, md] = Ia && window.addEventListener ? [
   "slow-2g",
   "2g"
 ].includes(Ja.effectiveType) || Ja.saveData), Hr = (e) => {
-  if (mt(e))
+  if (gt(e))
     try {
       e = e();
     } catch {
@@ -1066,7 +1066,7 @@ var Rt = {
   RECONNECT_EVENT: jE
 };
 async function op(...e) {
-  const [t, n, r, a] = e, o = bt({
+  const [t, n, r, a] = e, o = mt({
     populateCache: !0,
     throwOnError: !0
   }, typeof a == "boolean" ? {
@@ -1076,7 +1076,7 @@ async function op(...e) {
   const s = o.rollbackOnError;
   let l = o.optimisticData;
   const c = (p) => typeof s == "function" ? s(p) : s !== !1, d = o.throwOnError;
-  if (mt(n)) {
+  if (gt(n)) {
     const p = n, f = [], h = t.keys();
     for (const y of h)
       // Skip the special useSWRInfinite and useSWRSubscription keys.
@@ -1089,7 +1089,7 @@ async function op(...e) {
     if (!f) return;
     const [h, y] = ap(t, f), [k, m, b, E] = Tt.get(t), _ = () => {
       const Z = k[f];
-      return (mt(o.revalidate) ? o.revalidate(h().data, p) : o.revalidate !== !1) && (delete b[f], delete E[f], Z && Z[0]) ? Z[0](WE).then(() => h().data) : h().data;
+      return (gt(o.revalidate) ? o.revalidate(h().data, p) : o.revalidate !== !1) && (delete b[f], delete E[f], Z && Z[0]) ? Z[0](WE).then(() => h().data) : h().data;
     };
     if (e.length < 3)
       return _();
@@ -1100,10 +1100,10 @@ async function op(...e) {
       0
     ];
     const M = !ue(l), L = h(), R = L.data, B = L._c, U = ue(B) ? R : B;
-    if (M && (l = mt(l) ? l(U, R) : l, y({
+    if (M && (l = gt(l) ? l(U, R) : l, y({
       data: l,
       _c: U
-    })), mt(w))
+    })), gt(w))
       try {
         w = w(U);
       } catch (Z) {
@@ -1120,7 +1120,7 @@ async function op(...e) {
         _c: qe
       }));
     if (i && !T)
-      if (mt(i)) {
+      if (gt(i)) {
         const Z = i(w, U);
         y({
           data: Z,
@@ -1149,7 +1149,7 @@ const mf = (e, t) => {
     e[n][0] && e[n][0](t);
 }, nk = (e, t) => {
   if (!Tt.has(e)) {
-    const n = bt(Jw, t), r = {}, a = op.bind(qe, e);
+    const n = mt(Jw, t), r = {}, a = op.bind(qe, e);
     let o = en;
     const i = {}, s = (d, u) => {
       const p = i[d] || [];
@@ -1190,7 +1190,7 @@ const mf = (e, t) => {
 }, rk = (e, t, n, r, a) => {
   const o = n.errorRetryCount, i = a.retryCount, s = ~~((Math.random() + 0.5) * (1 << (i < 8 ? i : 8))) * n.errorRetryInterval;
   !ue(o) && i > o || setTimeout(r, s, a);
-}, ak = (e, t) => br(e) == br(t), [VE, ok] = nk(/* @__PURE__ */ new Map()), ik = bt(
+}, ak = (e, t) => br(e) == br(t), [VE, ok] = nk(/* @__PURE__ */ new Map()), ik = mt(
   {
     // events
     onLoadingSlow: en,
@@ -1218,15 +1218,15 @@ const mf = (e, t) => {
   // use web preset by default
   Qw
 ), sk = (e, t) => {
-  const n = bt(e, t);
+  const n = mt(e, t);
   if (t) {
     const { use: r, fallback: a } = e, { use: o, fallback: i } = t;
-    r && o && (n.use = r.concat(o)), a && i && (n.fallback = bt(a, i));
+    r && o && (n.use = r.concat(o)), a && i && (n.fallback = mt(a, i));
   }
   return n;
 }, lk = Ht({}), ck = "$inf$", YE = Ia && window.__SWR_DEVTOOLS_USE__, uk = YE ? window.__SWR_DEVTOOLS_USE__ : [], dk = () => {
   YE && (window.__SWR_DEVTOOLS_REACT__ = nt);
-}, ZE = (e) => mt(e[1]) ? [
+}, ZE = (e) => gt(e[1]) ? [
   e[0],
   e[1],
   e[2] || {}
@@ -1234,7 +1234,7 @@ const mf = (e, t) => {
   e[0],
   null,
   (e[1] === null ? e[2] : e[1]) || {}
-], KE = () => bt(ik, pn(lk)), pk = (e) => (t, n, r) => e(t, n && ((...o) => {
+], KE = () => mt(ik, pn(lk)), pk = (e) => (t, n, r) => e(t, n && ((...o) => {
   const [i] = Hr(t), [, , , s] = Tt.get(VE);
   if (i.startsWith(ck))
     return n(...o);
@@ -1286,7 +1286,7 @@ const bf = nt.use || ((e) => {
     return !0;
   }, X = Ye(() => {
     const ie = !m || !t ? !1 : ue(s) ? M().isPaused() || o ? !1 : ue(l) ? !0 : l : s, oe = (we) => {
-      const $e = bt(we);
+      const $e = mt(we);
       return delete $e._k, ie ? {
         isValidating: !0,
         isLoading: !0,
@@ -1351,7 +1351,7 @@ const bf = nt.use || ((e) => {
       } catch (D) {
         bn();
         const N = M(), { shouldRetryOnError: I } = N;
-        N.isPaused() || ($e.error = D, _e && we() && (N.onError(D, m, N), (I === !0 || mt(I) && I(D)) && (!M().revalidateOnFocus || !M().revalidateOnReconnect || L()) && N.onErrorRetry(D, m, N, (g) => {
+        N.isPaused() || ($e.error = D, _e && we() && (N.onError(D, m, N), (I === !0 || gt(I) && I(D)) && (!M().revalidateOnFocus || !M().revalidateOnReconnect || L()) && N.onErrorRetry(D, m, N, (g) => {
           const v = f[m];
           v && v[0] && v[0](Rt.ERROR_REVALIDATE_EVENT, g);
         }, {
@@ -1411,7 +1411,7 @@ const bf = nt.use || ((e) => {
   ]), rn(() => {
     let ie;
     function oe() {
-      const z = mt(c) ? c(R().data) : c;
+      const z = gt(c) ? c(R().data) : c;
       z && ie !== -1 && (ie = setTimeout(Se, z));
     }
     function Se() {
@@ -1490,7 +1490,7 @@ const bf = nt.use || ((e) => {
         throw new Error("Can’t trigger the mutation: missing fetcher.");
       if (!k)
         throw new Error("Can’t trigger the mutation: missing key.");
-      const b = bt(bt({
+      const b = mt(mt({
         populateCache: !1,
         throwOnError: !0
       }, i.current), y), E = jn();
@@ -1504,7 +1504,7 @@ const bf = nt.use || ((e) => {
             arg: h
           }),
           // We must throw the error here so we can catch and update the states.
-          bt(b, {
+          mt(b, {
             throwOnError: !0
           })
         );
@@ -1570,7 +1570,7 @@ const bf = nt.use || ((e) => {
     return !0;
   }, X = Ye(() => {
     const ie = !m || !t ? !1 : ue(s) ? M().isPaused() || o ? !1 : ue(l) ? !0 : l : s, oe = (we) => {
-      const $e = bt(we);
+      const $e = mt(we);
       return delete $e._k, ie ? {
         isValidating: !0,
         isLoading: !0,
@@ -1635,7 +1635,7 @@ const bf = nt.use || ((e) => {
       } catch (D) {
         bn();
         const N = M(), { shouldRetryOnError: I } = N;
-        N.isPaused() || ($e.error = D, _e && we() && (N.onError(D, m, N), (I === !0 || mt(I) && I(D)) && (!M().revalidateOnFocus || !M().revalidateOnReconnect || L()) && N.onErrorRetry(D, m, N, (g) => {
+        N.isPaused() || ($e.error = D, _e && we() && (N.onError(D, m, N), (I === !0 || gt(I) && I(D)) && (!M().revalidateOnFocus || !M().revalidateOnReconnect || L()) && N.onErrorRetry(D, m, N, (g) => {
           const v = f[m];
           v && v[0] && v[0](Rt.ERROR_REVALIDATE_EVENT, g);
         }, {
@@ -1695,7 +1695,7 @@ const bf = nt.use || ((e) => {
   ]), rn(() => {
     let ie;
     function oe() {
-      const z = mt(c) ? c(R().data) : c;
+      const z = gt(c) ? c(R().data) : c;
       z && ie !== -1 && (ie = setTimeout(Se, z));
     }
     function Se() {
@@ -6791,7 +6791,7 @@ const RA = (e, t = {
   bigint: (e) => on.create({ ...e, coerce: !0 }),
   date: (e) => kn.create({ ...e, coerce: !0 })
 }, lT = be;
-var gt = /* @__PURE__ */ Object.freeze({
+var yt = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   defaultErrorMap: Wn,
   setErrorMap: lA,
@@ -6907,19 +6907,19 @@ var gt = /* @__PURE__ */ Object.freeze({
   quotelessJson: sA,
   ZodError: ut
 });
-const cT = { BASE_URL: "/CreditCanadaWidget", DEV: !1, MODE: "production", PROD: !0, SSR: !1, VITE_API_ENV: "dev", VITE_API_URL: "https://dev-worship-yoz2.encr.app", VITE_BASELIME_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_BASELIME_RUM_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_FEEDBACK_ENV: "local", VITE_GOOGLE_ANALYTICS: "G-JJGB830P9K", VITE_ROOT_DOMAIN: "credit-canada-dev.localhost", VITE_SEGMENT_WRITE_KEY: "0GEdvB63FsuOyPZNRuUnlnvXjmHSBGBE", VITE_SHAKEBUGS_URL: "localhost:3000", VITE_WORSHIP_SECRET_KEY: "worship_gcsBHfiLtQwk5FIHOA3H9pgdNNUJoank5NIILvNgZzFHi2LrCvej6FcVEppzRr8l66z101FqmtriecAV5u6g" }, uT = gt.object({
-  NODE_ENV: gt.enum(["development", "test", "production"])
+const cT = { BASE_URL: "/CreditCanadaWidget", DEV: !1, MODE: "production", PROD: !0, SSR: !1, VITE_API_ENV: "dev", VITE_API_URL: "https://dev-worship-yoz2.encr.app", VITE_BASELIME_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_BASELIME_RUM_API_KEY: "4d0eef20ae728842b16ec766a2628e355ad18393", VITE_FEEDBACK_ENV: "local", VITE_GOOGLE_ANALYTICS: "G-JJGB830P9K", VITE_ROOT_DOMAIN: "credit-canada-dev.localhost", VITE_SEGMENT_WRITE_KEY: "0GEdvB63FsuOyPZNRuUnlnvXjmHSBGBE", VITE_SHAKEBUGS_URL: "localhost:3000", VITE_WORSHIP_SECRET_KEY: "worship_gcsBHfiLtQwk5FIHOA3H9pgdNNUJoank5NIILvNgZzFHi2LrCvej6FcVEppzRr8l66z101FqmtriecAV5u6g" }, uT = yt.object({
+  // NODE_ENV: z.enum(['development', 'test', 'production']),
   //   WORSHIP_SECRET_KEY: z.string(),
-}), mS = gt.object({
-  VITE_API_ENV: gt.enum(["local", "dev", "staging", "prod"]),
-  VITE_API_URL: gt.string().optional(),
-  VITE_ROOT_DOMAIN: gt.string(),
-  VITE_GOOGLE_ANALYTICS: gt.string().optional(),
-  VITE_SHAKEBUGS_API_KEY: gt.string().optional(),
-  VITE_SHAKEBUGS_URL: gt.string().optional(),
-  VITE_SEGMENT_WRITE_KEY: gt.string().optional(),
-  VITE_FEEDBACK_ENV: gt.enum(["local", "dev", "staging", "prod"]),
-  VITE_WORSHIP_SECRET_KEY: gt.string()
+}), mS = yt.object({
+  VITE_API_ENV: yt.enum(["local", "dev", "staging", "prod"]),
+  VITE_API_URL: yt.string().optional(),
+  VITE_ROOT_DOMAIN: yt.string(),
+  VITE_GOOGLE_ANALYTICS: yt.string().optional(),
+  VITE_SHAKEBUGS_API_KEY: yt.string().optional(),
+  VITE_SHAKEBUGS_URL: yt.string().optional(),
+  VITE_SEGMENT_WRITE_KEY: yt.string().optional(),
+  VITE_FEEDBACK_ENV: yt.enum(["local", "dev", "staging", "prod"]),
+  VITE_WORSHIP_SECRET_KEY: yt.string()
 }), wf = {
   NODE_ENV: void 0,
   VITE_API_ENV: "dev",
@@ -7600,7 +7600,7 @@ var Cd = ze((e, t) => {
   return nn.count(n) > 1 ? nn.only(null) : null;
 });
 Cd.displayName = "SlotClone";
-var yS = ({ children: e }) => /* @__PURE__ */ P(ht, { children: e });
+var yS = ({ children: e }) => /* @__PURE__ */ P(bt, { children: e });
 function _T(e) {
   return Gt(e) && e.type === yS;
 }
@@ -10622,19 +10622,19 @@ var mp = jC;
 function jC(e) {
   return e.toLowerCase();
 }
-var n_ = r_, yt = r_.prototype;
-yt.space = null;
-yt.attribute = null;
-yt.property = null;
-yt.boolean = !1;
-yt.booleanish = !1;
-yt.overloadedBoolean = !1;
-yt.number = !1;
-yt.commaSeparated = !1;
-yt.spaceSeparated = !1;
-yt.commaOrSpaceSeparated = !1;
-yt.mustUseProperty = !1;
-yt.defined = !1;
+var n_ = r_, ht = r_.prototype;
+ht.space = null;
+ht.attribute = null;
+ht.property = null;
+ht.boolean = !1;
+ht.booleanish = !1;
+ht.overloadedBoolean = !1;
+ht.number = !1;
+ht.commaSeparated = !1;
+ht.spaceSeparated = !1;
+ht.commaOrSpaceSeparated = !1;
+ht.mustUseProperty = !1;
+ht.defined = !1;
 function r_(e, t) {
   this.property = e, this.attribute = t;
 }
