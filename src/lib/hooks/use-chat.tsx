@@ -341,7 +341,7 @@ export function useChat({
 
             // A function call response was returned.
             // The updated chat with function call response will be sent to the API in the next iteration of the loop.
-            chatRequest = functionCallResponse as ChatRequest
+            chatRequest = functionCallResponse
           }
         }
 
